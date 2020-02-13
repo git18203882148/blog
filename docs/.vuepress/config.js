@@ -4,6 +4,7 @@ const pluginsConf = require('./config/plugins');
 module.exports = {
   title: '王二的个人网站',
   description: '记录生活，记录代码',
+  dest: './dist',
   configureWebpack: {
     resolve: {
       alias: {
@@ -11,6 +12,9 @@ module.exports = {
       }
     }
   },
+  head: [
+    ['link', { rel: 'icon', href: '/avatar.png' }]
+  ],
   plugins: pluginsConf,
   themeConfig: {
     sidebarDepth: 0,
