@@ -3,7 +3,7 @@
     <div class="theme-default-content">
       <h1>404</h1>
       <blockquote>{{ getMsg() }}</blockquote>
-      <router-link to="/">Take me home.</router-link>
+      <router-link to="/">返回首页</router-link>
     </div>
   </div>
 </template>
@@ -14,13 +14,13 @@ const msgs = [
   `How did we get here?`,
   `That's a Four-Oh-Four.`,
   `Looks like we've got some broken links.`
-]
+];
 
 export default {
   methods: {
-    getMsg () {
-      return msgs[Math.floor(Math.random() * msgs.length)]
+    getMsg() {
+      return msgs[Math.floor(Math.random() * msgs.length)];
     }
   }
-}
+};
 </script>

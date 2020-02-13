@@ -3,7 +3,7 @@ const navConf = require('./config/nav');
 const pluginsConf = require('./config/plugins');
 module.exports = {
   title: '王二的个人网站',
-  description: '记录生活，记录代码',
+  description: '写过点代码读过点书',
   dest: './dist',
   configureWebpack: {
     resolve: {
