@@ -1,5 +1,8 @@
+const sidebarConf = require('./config/sidebar');
+const navConf = require('./config/nav');
+const pluginsConf = require('./config/plugins');
 module.exports = {
-  title: '王玉略的个人网站',
+  title: '王二的个人网站',
   description: '记录生活，记录代码',
   configureWebpack: {
     resolve: {
@@ -8,48 +11,22 @@ module.exports = {
       }
     }
   },
-  plugins: [
-    // [
-    //   'vuepress-plugin-clean-urls',
-    //   {
-    //     normalSuffix: '',
-    //     indexSuffix: '/',
-    //     notFoundPath: '/404.html',
-    //   },
-    // ],
-  ],
+  plugins: pluginsConf,
   themeConfig: {
     sidebarDepth: 0,
-    lastUpdated: 'Last Updated',
+    lastUpdated: '上次更新',
     displayAllHeaders: true,
-    nav: [
-      { text: 'Code', link: '/code/' },
-      { text: 'Read', link: '/read/' },
-      { text: 'External', link: 'https://google.com' },
-    ],
-    sidebar: {
-      '/code/': [
-        {
-          title: 'git',
-          children: [
-            'git/常见用法',
-            'git/submodule',
-          ],
-        },
-        {
-          title: 'nginx',
-          children: [
-            'nginx/重写路径',
-            'nginx/通用配置优化',
-          ],
-        },
-      ],
-      '/read/': [
-        '奥斯本检核表法',
-        '大而不倒',
-        '大教堂和集市',
-        '动物农场'
-      ]
-    }
+    // 在线编辑相关
+    repo: 'https://github.com/WangYuLue/docs',
+    docsDir: 'docs',
+    editLinks: true,
+    editLinkText: '在 GitHub 上编辑此页',
+    // 搜索相关
+    // algolia: {
+    //   apiKey: '<API_KEY>',
+    //   indexName: '<INDEX_NAME>'
+    // },
+    nav: navConf,
+    sidebar: sidebarConf
   },
 }

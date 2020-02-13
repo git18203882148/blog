@@ -1,5 +1,7 @@
 {
   "devDependencies": {
+    "dayjs": "^1.8.20",
+    "moment": "^2.24.0",
     "vuepress": "1.2.0",
     "vuepress-plugin-clean-urls": "1.1.1"
   }
