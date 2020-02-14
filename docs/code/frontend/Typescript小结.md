@@ -1,4 +1,6 @@
-# Typescript小结
+---
+title: Typescript小结
+---
 
 > **需要注意的是，这篇文章是王二本人在刷了一遍`TypeScript`的语法后，认为有些地方需要着重注意，于是在这里做的一个小总结。**
 **如果需要系统的过一遍`TypeScript`的语法，这里重点推荐微软大神[xcatliu](https://github.com/xcatliu)的[TypeScript辅导教程](https://github.com/xcatliu/typescript-tutorial)，王二就是看的这篇教程写的这篇文章，也可以看[TypeScript文档](http://www.typescriptlang.org/docs/handbook/basic-types.html)([中文](http://www.tslang.cn/docs/handbook/basic-types.html))系统了解**

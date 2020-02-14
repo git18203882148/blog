@@ -1,4 +1,6 @@
-# pushState与replaceState
+---
+title: pushState与replaceState
+---
 
 ### 一、简介
 

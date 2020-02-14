@@ -1,0 +1,78 @@
+<template>
+  <div>
+    <div class="page-head">
+      <div v-if="getName()">
+        <h1 :id="getName()">{{getName()}}</h1>
+        <div class="active-meta">
+          <div class="post-time" v-if="this.data.date">
+            <span class="active-meta-prefix">发布时间:</span>
+            <span class="active-meta-post-time">{{this.data.date || ''}}</span>
+          </div>
+          <div class="read-times" v-if="this.data.times">
+            <span class="active-meta-prefix">阅读次数:</span>
+            <span class="active-meta-read-times">{{this.data.times || ''}}</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</template>
+
+<script>
+export default {
+  computed: {
+    data() {
+      return this.$page.frontmatter;
+    }
+  },
+  methods: {
+    getName(prefix = "") {
+      console.log(this.data.title);
+      return prefix + (this.data.title || "");
+    }
+  }
+};
+</script>
+
+<style lang="stylus">
+.page-head {
+  max-width: 740px;
+  margin: 0 auto;
+  padding: 4rem 2.5rem 0rem;
+
+  h1 {
+    margin-bottom: 10px;
+  }
+}
+
+@media (max-width: $MQNarrow) {
+  .page-head {
+    padding: 4rem 2rem 0rem;
+  }
+}
+
+@media (max-width: $MQMobileNarrow) {
+  .page-head {
+    padding: 4rem 1.5rem 0rem;
+  }
+}
+
+.active-meta {
+  color: #aaa;
+  font-size: 0.9em;
+  display: flex;
+}
+
+.active-meta-prefix {
+  font-weight: 500;
+  color: #4e6e8e;
+  display: inline-block;
+  margin-right: 5px;
+}
+
+.post-time, .read-times {
+  display: flex;
+  align-items: center;
+  flex: 1;
+}
+</style>

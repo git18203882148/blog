@@ -1,4 +1,6 @@
-# jsonp的一般原理 
+---
+title: jsonp的一般原理
+---
 
 > 由于[同源策略](https://baike.baidu.com/item/%E5%90%8C%E6%BA%90%E7%AD%96%E7%95%A5/3927875?fr=aladdin)，一般来说位于server1.example.com的网页无法与不是 server1.example.com的服务器沟通,这时候Jsonp可以帮助我们进行跨域的数据交互,另一个解决这个问题的新方法是[CORS](https://baike.baidu.com/item/CORS/16411212#viewPageContent)，咱们今天主要聊聊Jsonp。
 

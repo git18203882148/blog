@@ -1,4 +1,6 @@
-# JS中slice、substring、substr的区别
+---
+title: JS中slice、substring、substr的区别
+---
 
 ### 一、substring()
 

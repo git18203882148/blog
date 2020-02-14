@@ -1,4 +1,6 @@
-# Object.create
+---
+title: Object.create
+---
 
 1、`Object.create()` 方法会使用指定的原型对象及其属性去创建一个新的对象，语法如下：
 

@@ -2,7 +2,7 @@
   <main class="page">
     <div class="page-main">
       <slot name="top" />
-
+      <PageHead />
       <Content class="theme-default-content" />
       <PageEdit />
       <PageNav v-bind="{ sidebarItems }" />
@@ -16,9 +16,10 @@
 <script>
 import PageEdit from "@theme/components/PageEdit.vue";
 import PageNav from "@theme/components/PageNav.vue";
+import PageHead from "@theme/components/PageHead.vue";
 
 export default {
-  components: { PageEdit, PageNav },
+  components: { PageEdit, PageNav, PageHead },
   props: ["sidebarItems"]
 };
 </script>
@@ -49,7 +50,7 @@ export default {
     padding-bottom: 2rem;
     display: block;
     position: relative;
-    padding-right: 2.5rem;
+    padding-right: 0rem;
   }
 }
 </style>

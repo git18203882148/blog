@@ -1,4 +1,7 @@
-# JS中apply、call、bind的用法
+---
+title: JS中apply、call、bind的用法
+---
+
 
 apply()和call()都是为了改变某个函数运行时的上下文而存在的（就是为了改变函数内部this的指向）,bind()会创建一个新的函数, 当被调用时，将其this关键字设置为提供的值
 
