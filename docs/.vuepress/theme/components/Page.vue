@@ -28,17 +28,28 @@ export default {
 
 .page {
   padding-bottom: 2rem;
-  display: flex;
+  display: block;
+  position: relative;
+  padding-right: 10rem;
 }
 
 .page-right {
-  width: 230px;
-  padding-top: 60px;
+  position: absolute;
+  right: 0;
+  top: 4rem;
+  width: 10rem;
 }
 
 @media (max-width: $MQNarrow) {
   .page-right {
     display: none;
+  }
+
+  .page {
+    padding-bottom: 2rem;
+    display: block;
+    position: relative;
+    padding-right: 2.5rem;
   }
 }
 </style>

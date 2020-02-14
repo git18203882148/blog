@@ -1,6 +1,6 @@
 module.exports = {
   '/code/': require('../../code/sidebar'),
   '/read/': require('../../read/sidebar'),
-  '/view/': require('../../view/sidebar'),
+  '/tools/': require('../../tools/sidebar'),
   '/write/': require('../../write/sidebar'),
 }
