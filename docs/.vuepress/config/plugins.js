@@ -4,7 +4,7 @@ module.exports = [
     {
       transformer: (timestamp, lang) => {
         const dayjs = require('dayjs')
-        return dayjs(timestamp).format('YYYY/MM/DD')
+        return dayjs(timestamp).format('YYYY-MM-DD')
       }
     }
   ],

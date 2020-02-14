@@ -42,6 +42,8 @@ export default {
 .active-meta-prefix {
   font-weight: 500;
   color: #4e6e8e;
+  display: inline-block;
+  margin-right: 5px;
 }
 
 .post-time, .read-times {
