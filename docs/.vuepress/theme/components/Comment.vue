@@ -1,5 +1,5 @@
 <template>
-  <section class="comment-container" v-show="!commentDisabled">
+  <section class="comment-container" v-show="!this.commentDisabled">
     <h3>评 论：</h3>
     <div id="vcomments"></div>
   </section>
@@ -14,7 +14,7 @@ export default {
   name: "Valine",
   data() {
     return {
-      commentDisabled: this.isCommentDisabled()
+      commentDisabled: true
     };
   },
   mounted: function() {
@@ -25,6 +25,7 @@ export default {
     }
     this.valine = new Valine();
     this.initValine();
+    this.commentDisabled = this.isCommentDisabled();
   },
   watch: {
     $route(to, from) {
@@ -36,18 +37,14 @@ export default {
   },
   methods: {
     isCommentDisabled() {
-      try {
+      if (typeof location !== "undefined") {
         return headPageList.some(item => location.pathname.endsWith(item));
-      } catch (e) {
-        return false;
       }
+      return false;
     },
     initValine() {
-      let path = "";
-      try {
-        path = location.origin + location.pathname;
-      } catch (e) {}
-
+      let path = location.origin + location.pathname;
+      document.getElementsByClassName("leancloud-visitors")[0].id = path;
       this.valine.init({
         el: "#vcomments",
         appId: "PzJwckatlgGYxh6kPutyuQCa-gzGzoHsz", // your appId
