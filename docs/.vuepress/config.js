@@ -13,7 +13,7 @@ module.exports = {
     }
   },
   head: [
-    ['link', { rel: 'icon', href: '/avatar-large.png' }]
+    ['link', { rel: 'icon', href: '/avatar.png' }]
   ],
   plugins: pluginsConf,
   themeConfig: {
