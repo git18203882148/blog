@@ -8,9 +8,9 @@
             <span class="active-meta-prefix">发布时间:</span>
             <span class="active-meta-post-time">{{this.data.date || ''}}</span>
           </div>
-          <div class="read-times" v-if="this.data.times">
+          <div :id="getUrl()" class="read-times leancloud-visitors">
             <span class="active-meta-prefix">阅读次数:</span>
-            <span class="active-meta-read-times">{{this.data.times || ''}}</span>
+            <span class="active-meta-read-times leancloud-visitors-count"></span>
           </div>
         </div>
       </div>
@@ -28,6 +28,12 @@ export default {
   methods: {
     getName(prefix = "") {
       return prefix + (this.data.title || "");
+    },
+    getUrl() {
+      if (typeof window === "undefined") {
+        return "";
+      }
+      return window.location.origin + window.location.pathname;
     }
   }
 };
