@@ -1,12 +1,14 @@
 <template>
-  <main class="page">
-    <div class="page-main">
+  <main>
+    <div>
       <PageHead />
       <Content class="theme-default-content" />
       <div class="list-item-content">
         <div class="list-item" v-for="item in list">
-          <div class="list-item-title">{{item.title}}</div>
-          <div class="list-item-description">{{item.description}}</div>
+          <router-link :to="item.link">
+            <div class="list-item-title">{{item.title}}</div>
+            <div class="list-item-description">{{item.description}}</div>
+          </router-link>
         </div>
       </div>
     </div>
@@ -25,28 +27,28 @@ export default {
     return {
       list: [
         {
-          title: "15 万字面试资料",
+          title: "代码",
           description:
-            "这是我出版的「前端面试之道」小册的前身，目前小册已经累计卖出了 8000 册了。该面试资料是我耗时半年的心血，内容包含了 JS、浏览器、性能相关、安全知识、框架及计算机基础知识。希望能对你的面试有所帮助。",
-          link: ""
+            "我从16年2月份接触编程，到现在玩过不少东西，从前端、后端再到运维。我在这里记录平时开发中遇到的有意思的知识点。",
+          link: "/code/"
         },
         {
-          title: "15 万字面试资料",
+          title: "工具",
           description:
-            "这是我出版的「前端面试之道」小册的前身，目前小册已经累计卖出了 8000 册了。该面试资料是我耗时半年的心血，内容包含了 JS、浏览器、性能相关、安全知识、框架及计算机基础知识。希望能对你的面试有所帮助。",
-          link: ""
+            "“君子性非异也，善假于物也”，合理的使用工具能让工作事半功倍。这里记录着我平时使用的可以提高效率的工具。",
+          link: "/tools/"
         },
         {
-          title: "15 万字面试资料",
+          title: "阅读",
           description:
-            "这是我出版的「前端面试之道」小册的前身，目前小册已经累计卖出了 8000 册了。该面试资料是我耗时半年的心血，内容包含了 JS、浏览器、性能相关、安全知识、框架及计算机基础知识。希望能对你的面试有所帮助。",
-          link: ""
+            "“读万卷书，行万里路”，阅读是是扩展知识面最廉价的途径之一。我平时也会阅读一些书籍，这里记录这我的一些读后感。",
+          link: "/read/"
         },
         {
-          title: "15 万字面试资料",
+          title: "文章",
           description:
-            "这是我出版的「前端面试之道」小册的前身，目前小册已经累计卖出了 8000 册了。该面试资料是我耗时半年的心血，内容包含了 JS、浏览器、性能相关、安全知识、框架及计算机基础知识。希望能对你的面试有所帮助。",
-          link: ""
+            "从大二开始写文章，一直持续到现在，其中不乏一些在社区中赞同数很高的文章，有兴趣可以点开看看。在文章中，我的笔名叫王二。",
+          link: "/write/"
         }
       ]
     };
@@ -66,15 +68,24 @@ export default {
 .list-item {
   transition: 0.3s;
   border-radius: 5px;
-  padding: 1rem 0;
+  padding: 1rem;
+  cursor: pointer;
 
   .list-item-title {
     font-size: 1.1em;
     color: #3eaf7c;
+    margin-bottom: 5px;
+    font-weight: 500;
   }
 
   .list-item-description {
+    color: #606354;
+    font-weight: 400;
   }
+}
+
+.list-item:nth-child(2n+1) {
+  background-color: #f9f9f8;
 }
 
 .list-item:hover {
@@ -86,7 +97,7 @@ export default {
   .list-item {
     transition: 0.3s;
     border-radius: 5px;
-    padding: 0 0 1rem 0;
+    padding: 0.5 0.2rem;
   }
 }
 </style>

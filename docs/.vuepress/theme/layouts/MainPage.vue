@@ -5,11 +5,24 @@
     @touchstart="onTouchStart"
     @touchend="onTouchEnd"
   >
-    <Navbar />
+    <Navbar v-if="shouldShowNavbar" @toggle-sidebar="toggleSidebar" />
 
-    <Page :sidebar-items="sidebarItems"></Page>
+    <div class="sidebar-mask" @click="toggleSidebar(false)"></div>
+
+    <Sidebar :items="sidebarItems" @toggle-sidebar="toggleSidebar">
+      <slot name="sidebar-top" #top />
+      <slot name="sidebar-bottom" #bottom />
+    </Sidebar>
+
+    <Home v-if="$page.frontmatter.home" />
+
+    <Page v-else :sidebar-items="sidebarItems">
+      <slot name="page-top" #top />
+      <slot name="page-bottom" #bottom />
+    </Page>
   </div>
 </template>
+
 <script>
 import Home from "@theme/components/Home.vue";
 import Navbar from "@theme/components/Navbar.vue";
@@ -52,6 +65,11 @@ export default {
     },
 
     sidebarItems() {
+      // console.log({
+      //   page: this.$page,
+      //   site: this.$site,
+      //   localePath: this.$localePath
+      // });
       return resolveSidebarItems(
         this.$page,
         this.$page.regularPath,
