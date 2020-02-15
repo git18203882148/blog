@@ -27,7 +27,6 @@ export default {
   },
   methods: {
     getName(prefix = "") {
-      console.log(this.data.title);
       return prefix + (this.data.title || "");
     }
   }

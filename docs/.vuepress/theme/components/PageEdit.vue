@@ -5,7 +5,7 @@
       <OutboundLink />
     </div>
 
-    <div class="last-updated" v-if="lastUpdated">
+    <div class="last-updated" v-if="lastUpdated && !isHomePage">
       <span class="prefix">{{ lastUpdatedText }}:</span>
       <span class="time">{{ lastUpdated }}</span>
     </div>
@@ -20,6 +20,10 @@ export default {
   computed: {
     lastUpdated() {
       return this.$page.lastUpdated;
+    },
+
+    isHomePage() {
+      return this.$page.regularPath === "/";
     },
 
     lastUpdatedText() {
