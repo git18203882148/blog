@@ -8,4 +8,14 @@ module.exports = [
       }
     }
   ],
+  [
+    'vuepress-plugin-comment',
+    {
+      options: {
+        el: '#valine-vuepress-comment',
+        appId: 'PzJwckatlgGYxh6kPutyuQCa-gzGzoHsz',
+        appKey: 'RDEKm8HVVbQBN8Wp9wpxidpC'
+      }
+    }
+  ]
 ];
