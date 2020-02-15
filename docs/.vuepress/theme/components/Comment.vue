@@ -44,6 +44,14 @@ export default {
     },
     initValine() {
       let path = location.origin + location.pathname;
+      // 将：
+      // http://wangyulue.com/code/preface.html
+      // http://www.wangyulue.com/code/preface.html
+      // https://www.wangyulue.com/code/preface.html
+      // 都变为 wangyulue.com/code/preface.html，统一计数
+      if (path.includes("wangyulue")) {
+        path = path.replace(/(.*?)(wangyulue)(.*?)/, "$2$3");
+      }
       document.getElementsByClassName("leancloud-visitors")[0].id = path;
       this.valine.init({
         el: "#vcomments",
