@@ -1,4 +1,8 @@
 {
+  "scripts": {
+    "dev": "vuepress dev docs",
+    "build": "vuepress build docs"
+  },
   "devDependencies": {
     "dayjs": "^1.8.20",
     "leancloud-storage": "^4.2.0",

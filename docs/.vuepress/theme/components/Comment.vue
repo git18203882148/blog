@@ -38,7 +38,7 @@ export default {
   methods: {
     isCommentDisabled() {
       if (typeof location !== "undefined") {
-        return headPageList.some(item => location.pathname.endsWith(item));
+        return headPageList.some(item => item.includes(location.pathname));
       }
       return false;
     },
