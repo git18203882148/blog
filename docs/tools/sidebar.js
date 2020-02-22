@@ -1,7 +1,18 @@
 module.exports = [
   {
+    title: 'Markdown',
+    sidebarDepth: 3,
+    children: [
+      {
+        title: '语法',
+        path: 'markdown',
+      },
+    ]
+  },
+  {
     title: '快捷键',
     children: [
+
       {
         title: 'Chrome',
         path: 'hot-key/Chrome',
