@@ -5,7 +5,7 @@ module.exports = [
     children: [
       {
         title: '语法',
-        path: 'markdown',
+        path: 'markdown/markdown',
       },
     ]
   },
