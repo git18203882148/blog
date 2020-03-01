@@ -10,6 +10,20 @@ module.exports = [
     ]
   },
   {
+    title: 'Vim',
+    sidebarDepth: 3,
+    children: [
+      {
+        title: '基本用法',
+        path: 'vim/base',
+      },
+      {
+        title: '用法整理',
+        path: 'vim/vim',
+      },
+    ]
+  },
+  {
     title: '快捷键',
     children: [
 
