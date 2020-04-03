@@ -325,9 +325,9 @@ Markdown 由 John Gruber 在2004年创建，现在是世界上最流行的标记
 转变成HTML后如下：
 
 ```html
-<img src="/assets/img/google-logo.png" alt="">
+<img src="./images/google-logo.png" alt="">
 
-<img src="/assets/img/google-logo.png" alt="logo" title="google logo">
+<img src="./images/google-logo.png" alt="logo" title="google logo">
 
 <img src="https://github.githubassets.com/images/modules/logos_page/Octocat.png" alt="logo" title="github logo">
 ```

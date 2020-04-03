@@ -6,6 +6,7 @@ module.exports = [
   {
     title: 'frontend',
     children: [
+      'frontend/electron/从零搭建Electron应用',
       'frontend/PWA',
       'frontend/304状态码',
       'frontend/pushState与replaceState',
