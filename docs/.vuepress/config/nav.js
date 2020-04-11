@@ -3,6 +3,7 @@ module.exports = [
   { text: '工具', link: '/tools/' },
   { text: '阅读', link: '/read/' },
   { text: '文章', link: '/write/' },
+  { text: '翻译', link: '/translation/' },
   {
     text: '个人主页', items: [
       { text: 'github', link: 'https://github.com/WangYuLue' },
