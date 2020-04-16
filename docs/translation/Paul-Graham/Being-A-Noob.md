@@ -12,7 +12,7 @@ proofreader: yulue
 
 January 2020
 
-2020年01月
+2020 年 01 月
 
 
 <br>
