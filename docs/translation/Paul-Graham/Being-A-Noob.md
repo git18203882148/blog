@@ -1,5 +1,7 @@
 ---
 title: 成为一个菜鸟
+translator: jiaojiao
+proofreader: yulue
 ---
 
 ### [Being-A-Noob](http://www.paulgraham.com/noob.html)

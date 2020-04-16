@@ -1,5 +1,7 @@
 ---
 title: 冠状病毒与信誉
+translator: yulue
+proofreader: yulue
 ---
 
 ### [Coronavirus and Credibility](http://www.paulgraham.com/cred.html)

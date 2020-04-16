@@ -18,3 +18,13 @@
 - [ ] 首页添加最新发布的文章
 - [ ] Nav栏添加算法项
 - [ ] Nav栏添加数学项
+
+### Front Matter
+
+Front Matter 支持字段
+
+- date 发布时间
+- translator 译者
+- translatorLink 译者链接
+- proofreader 校对者
+- proofreaderLink 校对者链接
