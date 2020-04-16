@@ -2,7 +2,7 @@ const sidebarConf = require('./config/sidebar');
 const navConf = require('./config/nav');
 const pluginsConf = require('./config/plugins');
 module.exports = {
-  title: '王二的个人网站',
+  title: '王玉略的网络日志',
   description: '写过点代码读过点书',
   dest: './dist',
   configureWebpack: {
