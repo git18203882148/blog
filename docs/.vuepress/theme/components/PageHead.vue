@@ -4,10 +4,6 @@
       <div v-if="getName()">
         <h1 :id="getName()">{{getName()}}</h1>
         <div class="active-meta">
-          <div :id="getUrl()" class="read-times leancloud-visitors">
-            <span class="active-meta-prefix">阅读次数:</span>
-            <span class="active-meta-read-times leancloud-visitors-count"></span>
-          </div>
           <div class="post-time" v-if="this.data.date">
             <span class="active-meta-prefix">发布时间:</span>
             <span class="active-meta-post-time">{{this.data.date || ''}}</span>
@@ -25,6 +21,10 @@
               <a :href="this.data.proofreaderLink" target="_blank">{{this.data.proofreader || ''}}</a>
             </span>
             <span v-else class="active-meta-read-proofreader">{{this.data.proofreader || ''}}</span>
+          </div>
+          <div :id="getUrl()" class="read-times leancloud-visitors">
+            <span class="active-meta-prefix">阅读次数:</span>
+            <span class="active-meta-read-times leancloud-visitors-count"></span>
           </div>
         </div>
       </div>
