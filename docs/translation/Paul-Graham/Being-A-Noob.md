@@ -55,7 +55,7 @@ I think the answer is that there are two sources of feeling like a noob: being s
 
 Now that too much food is more of a problem than too little, our dislike of feeling hungry leads us astray. And I think our dislike of feeling like a noob does too.
 
-既然吃得太多比吃得太少更是一个问题，那么我们对饥饿的厌恶就会使我们误入歧途。而且我认为我们也讨厌变成菜鸟那样的感觉。
+如今吃太多比吃不饱更是一个问题，由于我们对饥饿的厌恶致使我们误入歧途。我认为这和我们不喜欢菜鸟的感觉是一样的。
 
 <br>
 
