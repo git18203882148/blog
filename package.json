@@ -2,7 +2,8 @@
   "scripts": {
     "dev": "vuepress dev docs",
     "start": "npm run dev",
-    "build": "vuepress build docs"
+    "build": "vuepress build docs",
+    "deploy": "npm run build && deploy-gh.sh"
   },
   "devDependencies": {
     "dayjs": "^1.8.20",

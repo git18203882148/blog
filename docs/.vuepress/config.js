@@ -4,6 +4,7 @@ const pluginsConf = require('./config/plugins');
 module.exports = {
   title: '王玉略的网络日志',
   description: '写过点代码读过点书',
+  base: '/blog/',
   dest: './dist',
   configureWebpack: {
     resolve: {
