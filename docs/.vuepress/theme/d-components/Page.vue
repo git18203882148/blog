@@ -30,26 +30,26 @@ export default {
           title: "代码",
           description:
             "我从16年2月份接触编程，到现在玩过不少东西，从前端、后端再到运维。我在这里记录平时开发中遇到的有意思的知识点。",
-          link: "/code/"
+          link: "/code/preface.html"
         },
         {
           title: "工具",
           description:
             "“君子性非异也，善假于物也”，合理的使用工具能让工作事半功倍。这里记录着我平时使用的可以提高效率的工具。",
-          link: "/tools/"
-        },
-        {
-          title: "阅读",
-          description:
-            "“读万卷书，行万里路”，阅读是是扩展知识面最廉价的途径之一。我平时也会阅读一些书籍，这里记录这我的一些读后感。",
-          link: "/read/"
+          link: "/tools/preface.html"
         },
         {
           title: "文章",
           description:
             "从大二开始写文章，一直持续到现在，其中不乏一些在社区中赞同数很高的文章，有兴趣可以点开看看。在文章中，我的笔名叫王二。",
-          link: "/write/"
-        }
+          link: "/write/preface.html"
+        },
+       /* {
+          title: "阅读",
+          description:
+              "“读万卷书，行万里路”，阅读是是扩展知识面最廉价的途径之一。我平时也会阅读一些书籍，这里记录这我的一些读后感。",
+          link: "/read/"
+        }*/
       ]
     };
   },

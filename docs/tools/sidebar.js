@@ -1,3 +1,7 @@
+const utils = require('../.vuepress/utils/utils');
+module.exports = utils.getList("tools");
+
+/*
 module.exports = [
   {
     title: 'Markdown',
@@ -45,4 +49,4 @@ module.exports = [
       }
     ],
   },
-];
+];*/

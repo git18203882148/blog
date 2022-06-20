@@ -1,3 +1,9 @@
+const utils = require('../.vuepress/utils/utils');
+module.exports = utils.getList("code");
+
+
+
+/*
 module.exports = [
   {
     title: 'preface',
@@ -45,4 +51,4 @@ module.exports = [
       'python/基础语法',
     ],
   }
-];
+];*/

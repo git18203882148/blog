@@ -1,10 +1,2 @@
-module.exports = [
-  '奥斯本检核表法',
-  '回顾十年前的次贷危机',
-  '信息过剩与极简主义',
-  '为“黄牛”正名',
-  '荆棘之路不会孤独',
-  '为什么生物不能永生？',
-  '今天你“迫害”别人了吗？',
-  '我们这一代',
-];
+const utils = require('../.vuepress/utils/utils');
+module.exports = utils.getList("write");
