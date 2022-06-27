@@ -8,7 +8,7 @@ function  fileDisplay(filePath,type,dirName){
 
 
     if(type===2) {filePath = filePath+'/'+dirName}
-    var reg = RegExp(/\./)
+    var reg = RegExp(/\.(md|js)$/)
     let files = fs.readdirSync(filePath);
     if(type===1){
         return files.filter(item=>!reg.test(item))

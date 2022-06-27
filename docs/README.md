@@ -3,7 +3,7 @@ editLink: false
 layout: MainPage
 ---
 
-我是王玉略，一个程序员，对金融和历史感兴趣。
+我是lib,一个程序员。
 
 我尝试用代码实现脑中的想法。
 
